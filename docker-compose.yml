@@ -11,4 +11,6 @@ services:
   redis:
     image: redis
     volumes:
-      - "/data:/data"
+      - "redis_data:/data"
+volumes:
+  redis_data:
